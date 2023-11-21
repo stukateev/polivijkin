@@ -1,0 +1,10 @@
+.logo__subtitle{
+    display: inline-block;
+    margin: 0;
+    font-family: "OpenSans-ExtraBold", sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    width: 270px;
+    text-align: start;
+}

@@ -1,0 +1,14 @@
+@import url(./__dots/slider__dots.css);
+
+@import url(./__dot/slider__dot.css);
+@import url(./__dot/_active/slider__dot_active.css);
+@import url(./__controls/slider__controls.css);
+@import url(./__arrow/slider__arrow.css);
+@import url(./__line/slider__line.css);
+
+.slider{
+    overflow: hidden;
+    max-width: 1400px;
+    width: 100%;
+
+}

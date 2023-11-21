@@ -1,0 +1,15 @@
+.slide__description{
+    font-size: 18px;
+    font-family: OpenSans-Regular, serif;
+    color: #ffffff;
+    padding: 0;
+
+}
+
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1350px) {
+    .slide__description{
+        font-size: 20px;
+    }
+}

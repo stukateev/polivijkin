@@ -1,0 +1,8 @@
+.find-form__button{
+    background: transparent   url("../../../img/search-icon.svg") no-repeat;
+    width: 19px;
+    height: 19px;
+    border: none;
+    cursor: pointer;
+    display: inline-block
+}

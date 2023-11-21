@@ -1,0 +1,18 @@
+.slide__image{
+    margin-top: 100px;
+    border-radius: 16px;
+    border: none;
+    max-width: 700px;
+    width: 50%;
+    object-fit: cover;
+    height: 500px;
+    margin-right: 10px;
+}
+
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1350px) {
+    .slide__image{
+        margin-top: 50px;
+    }
+}

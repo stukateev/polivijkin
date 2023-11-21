@@ -1,0 +1,136 @@
+.tab{
+    margin-top: 75px;
+    display: block;
+    float: left;
+    border-radius: 10px;
+    transition: all 1s;
+    filter: blur(0);
+    cursor: pointer;
+}
+
+.tab__title{
+    display: inline-block;
+    transition:1s;
+    font-size: 23px;
+    font-family: OpenSans-Regular, serif;
+    color: #ffffff;
+    bottom: 0;
+    left: 5px;
+}
+
+.tab__description {
+    animation: fade .5s linear forwards;
+    font-size: 16px;
+    font-family: OpenSans-Regular, serif;
+    color: #ffffff;
+    margin-top: -20px;
+    display: none;
+    width: 90%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    text-indent: 5px;
+    padding-right: 30px;
+    padding-left: 15px;
+    padding-top: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tab:hover img {
+    filter: blur(3px) brightness(50%) ;
+}
+.tab:hover .tab__title {
+    transform: translateX(10px) scale(1.05) ;
+    color: #FFA827;
+}
+div.tab:hover .tab__description {
+    display: inline-block;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+div.tab__autopoliv {
+    width: 49%;
+    height: 370px;
+}
+
+div.tab__light {
+    margin-top: 75px;
+    display: block;
+    float: right;
+    width: 23%;
+    height: 230px;
+}
+
+
+div.tab__gidrobath {
+    margin-top: 75px;
+    margin-right: 1.5%;
+    display: block;
+    float: right;
+    width: 23%;
+    height: 230px;
+}
+
+div.tab__market {
+    margin-top: 35px;
+    display: block;
+    float: right;
+    width: 47.5%;
+    height: 400px;
+}
+
+div.tab__bath {
+    margin-top: 15px;
+    display: block;
+    float: left;
+    width: 23.75%;
+    height: 180px;
+}
+
+div.tab__news {
+    margin-top: 15px;
+    margin-left: 1.5%;
+    display: block;
+    float: left;
+    width: 23.75%;
+    height: 180px;
+}
+
+div.tab__landscape {
+    margin-top: 40px;
+    display: block;
+    float: left;
+    width: 49%;
+    height: 370px;
+}
+
+
+
+div.tab__article {
+    margin-top: 10px;
+    display: block;
+    float: right;
+    width: 23%;
+    height: 290px;
+}
+
+
+
+div.tab__osmos {
+    margin-top: 10px;
+    margin-right: 1.5%;
+    display: block;
+    float: right;
+    width: 23%;
+    height: 290px;
+}

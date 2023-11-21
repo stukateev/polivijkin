@@ -1,0 +1,7 @@
+.slide__text{
+    display: flex;
+    max-width: 600px;
+    width: 45%;
+    flex-direction: column;
+    margin-top: 40px;
+}

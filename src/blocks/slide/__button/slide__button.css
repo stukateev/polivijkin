@@ -1,0 +1,19 @@
+.slide__button{
+    width: 338px;
+    height: 72px;
+    background: #FFA827;
+    box-shadow: 0 3px 3.08434px rgba(0, 0, 0, 0.25), inset 0 3px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 43.9518px;
+    font-family: OpenSans-Bold, serif;
+    font-size: 23px;
+    color: white;
+    border-style: none;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+.slide__button:hover{
+    scale: 1.1;
+}

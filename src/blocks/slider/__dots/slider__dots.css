@@ -1,0 +1,6 @@
+.slider__dots{
+    margin-left: 75px;
+    margin-right: 75px;
+    display: flex;
+    justify-content: space-between;
+}

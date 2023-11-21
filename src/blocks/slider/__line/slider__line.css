@@ -1,0 +1,7 @@
+.slider__line{
+    position: relative;
+    display: flex;
+    width: calc(100% * 3);
+    min-height: 600px;
+    transition: .9s;
+}

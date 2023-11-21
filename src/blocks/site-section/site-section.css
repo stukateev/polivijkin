@@ -1,0 +1,92 @@
+.site-section{
+
+}
+.site-section__title{
+    margin: 0;
+    margin-bottom: 88px;
+    margin-top: 139px;
+    text-align: left;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.site-section__grid-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 23px;
+}
+.site-section__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.site-section__section-button{
+    margin-top: 24px;
+    position: relative;
+    cursor: pointer;
+}
+.site-section__section-button:hover{
+
+}
+.site-section__section-button-description{
+    position: absolute;
+    left: 0;
+    top: -16px;
+    height: 100%;
+    width: 100%;
+    background: rgba(39, 39, 39, 0.83);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    border-radius: 16px;
+
+}
+
+.site-section__section-button:hover   .site-section__section-button-description{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.site-section__section-button:hover   .site-section__section-button-image{
+
+}
+
+.site-section__small-box{
+    align-self: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 31px;
+
+}
+
+.site-section__section-button-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.site-section__section-button-image_big{
+    height: 298px;
+}
+
+.site-section__section-button-image_small{
+    height: 144px;
+}
+
+.site-section__section-button-title{
+    color: #FFF;
+    text-align: left;
+    font-size: 26.231px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0 10px 5px;
+}
+
+.site-section__section-button-description{
+
+}

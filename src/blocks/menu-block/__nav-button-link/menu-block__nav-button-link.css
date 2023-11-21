@@ -1,0 +1,17 @@
+.menu-block__nav-button-link{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    height: 69px;
+    width: 100%;
+}
+
+.menu-block__nav-button-link:hover {
+    color: #FFA827 ;
+    transform: scale(1.2);
+}
+
+
+

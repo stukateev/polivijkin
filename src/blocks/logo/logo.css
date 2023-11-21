@@ -1,0 +1,24 @@
+@import url("./__description/logo__description.css");
+@import url("./__img/logo__img.css");
+@import url("./__title/logo__title.css");
+@import url("./__subtitle/logo__subtitle.css");
+
+.logo{
+    width: 360px;
+    height: 64px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    transition: linear .4s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.logo:hover{
+    scale: 1.05;
+}

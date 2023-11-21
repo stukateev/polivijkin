@@ -1,0 +1,8 @@
+.slider__controls{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,32 @@
+.menu-block__drop-down-button{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 69px;
+    transition: linear .4s;
+    line-height: 69px;
+    position: relative;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.menu-block__drop-down-button:hover{
+    scale: 1.05;
+    color: #FFA827;
+}
+
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1350px) {
+    .menu-block__drop-down-button{
+        min-height: 40px;
+        line-height: 40px;
+    }
+}

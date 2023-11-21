@@ -1,0 +1,7 @@
+.logo__description{
+    margin-left: 28px;
+    height: 50px;
+    width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+}

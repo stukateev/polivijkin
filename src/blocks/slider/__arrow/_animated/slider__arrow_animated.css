@@ -1,0 +1,14 @@
+.slider__arrow_animated{
+    animation: shake_arrow 0.7s;
+}
+@keyframes shake_arrow {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}

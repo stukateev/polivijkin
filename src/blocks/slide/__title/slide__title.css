@@ -1,0 +1,18 @@
+.slide__title{
+    margin: 0;
+    font-family: OpenSans-ExtraBold, serif;
+    line-height: 87px;
+    font-size: 52px;
+    color: #ffffff;
+    text-align: left;
+
+}
+
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1350px) {
+    .slide__title{
+        line-height: 62px;
+        font-size: 50px;
+    }
+}

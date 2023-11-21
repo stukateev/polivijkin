@@ -1,0 +1,123 @@
+.header-catalog__navigate-back-button{
+    margin-right: 26px;
+    transition: linear .3s;
+    cursor: pointer;
+}
+
+.header-catalog__navigate-back-button:hover{
+    scale: 1.2;
+}
+
+.header-catalog__navigate-menu{
+    display: flex;
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.header-catalog__navigate-text{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.header-catalog__navigate-text_a{
+    cursor: pointer;
+    transition: .3s linear;
+}
+.header-catalog__navigate-text_a:hover{
+    border-bottom: 1px solid #FFA827;
+    color: #FFA827;
+}
+
+.header-catalog__top-menu{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header-catalog__count{
+    margin-left: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-catalog__sort-count{
+    height: 30px;
+    width: 220px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.header-catalog__sort-button{
+    height: 10.25px;
+    width: 20.5px;
+    display: flex;
+}
+
+.header-catalog__sort-icon{
+    height: 10.25px;
+    width: 20.5px;
+    transition: linear .3s;
+    cursor: pointer;
+}
+
+.header-catalog__sort-icon:hover{
+    scale: 1.1;
+}
+
+
+.header-catalog__sort-text{
+    font-size: 11px;
+}
+
+.header-catalog__filter-icon{
+    margin-left: 51px;
+    height: 23px;
+    width: 25.88px;
+    transition: linear .3s;
+    cursor: pointer;
+}
+
+.header-catalog__filter-icon:hover{
+    scale: 1.1;
+}
+
+.header-catalog__find-form{
+    max-width: 320px;
+    height: 33px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 32.1092px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.header-catalog__find-form-input{
+    border: none;
+    height: 90%;
+}
+
+.header-catalog__find-form-button{
+    background: transparent   url("../../img/search-icon.svg") no-repeat;
+    width: 19px;
+    height: 19px;
+    border: none;
+    cursor: pointer;
+    display: inline-block
+}

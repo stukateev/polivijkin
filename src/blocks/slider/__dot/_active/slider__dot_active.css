@@ -1,0 +1,6 @@
+.slider__dot_active{
+    background-image: none;
+    background-color: #05A2D6;
+    -webkit-mask-image: url("../../../../img/dot.svg");
+    mask-image: url("../../../../img/dot.svg");
+}

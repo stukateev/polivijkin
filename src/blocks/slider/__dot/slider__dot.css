@@ -1,0 +1,17 @@
+.slider__dot{
+    background: transparent;
+    background-image: url("../../../img/dot.svg");
+    width: 25px;
+    height: 25px;
+    border: none;
+    box-shadow: none;
+    margin-right: 30px;
+    transition: opacity linear 0.3s;
+    cursor: pointer;
+}
+.slider__dot:last-of-type{
+    margin-right: 0;
+}
+.slider__dot:hover{
+    opacity: 0.5;
+}

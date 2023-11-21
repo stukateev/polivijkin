@@ -1,0 +1,20 @@
+@import url("./menu-block.css");
+@import url("./__menu/menu-block__menu.css");
+@import url("./__nav-button/menu-block__nav-button.css");
+@import url("./__nav-button-link/menu-block__nav-button-link.css");
+@import url("./__drop-down-menu/menu-block__drop-down-menu.css");
+@import url("./__drop-down-button/menu-block__drop-down-button.css");
+@import url("./__drop-down-button/_link/menu-block__drop-down-button_link.css");
+
+.menu-block{
+    background-image:  url("../../img/main.png");
+    min-width: 900px;
+    width: auto;
+    height: 69px;
+    padding: 0;
+    border-radius: 0 0 40px 40px;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    margin: 10px auto 0;
+
+}

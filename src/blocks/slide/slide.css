@@ -1,0 +1,15 @@
+@import url(./__button/slide__button.css);
+@import url(./__description/slide__description.css);
+@import url(./__image/slide__image.css);
+@import url(./__subtitle/slide__subtitle.css);
+@import url(./__title/slide__title.css);
+@import url(./__text/slide__text.css);
+@import url(./__description/_li/slide__description_li.css);
+@import url(./slide_disabled.css);
+
+.slide{
+    width: 100%;
+    padding-left: 10px;
+    display:flex;
+    justify-content: space-between;
+}

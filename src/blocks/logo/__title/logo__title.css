@@ -1,0 +1,10 @@
+.logo__title{
+    margin: 0;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 19px;
+    line-height: 26px;
+    color: #FFFFFF;
+    width: 220px;
+    display: inline-block;
+    text-align: start;
+}

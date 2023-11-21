@@ -1,3 +1,63 @@
+@import url(./blocks/header/header.css);
+@import url(./blocks/callback-button/callback-button.css);
+@import url(./blocks/logo/logo.css);
+@import url(./blocks/menu-block/menu-block.css);
+@import url(./blocks/find-form/find-form.css);
+@import url(./blocks/page/page.css);
+@import url(./blocks/slider/slider.css);
+@import url(./blocks/slide/slide.css);
+@import url(./blocks/top-menu/top-menu.css);
+@import url(./blocks/drawing/drawing.css);
+@import url(./blocks/buttons/buttons.css);
+@import url(./blocks/tabs/tabs.css);
+@import url(./blocks/site-section/site-section.css);
+@import url(./blocks/feedback-form/feedback-form.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/catalog-menu/catalog-menu.css);
+@import url(./blocks/catalog-system-poliv/catalog-system-poliv.css);
+@import url(./blocks/header-catalog/header-catalog.css);
+
+@font-face {
+  font-family: "OpenSans-Bold" ;
+  src: url("./fonts/OpenSans/OpenSans-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular" ;
+  src: url("./fonts/OpenSans/OpenSans-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-ExtraBold" ;
+  src: url("./fonts/OpenSans/OpenSans-ExtraBold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 54px;
+  font-family: OpenSans-ExtraBold, serif;
+  color: #ffffff;
+  line-height: 56px;
+}
+
+h3 {
+  font-size: 46px;
+  font-family: OpenSans-Bold, serif;
+  color: #ffffff;
+}
+
+span.adv-slide-description {
+  text-indent: 5px;
+  font-size: 20px;
+  font-family: OpenSans-Regular, serif;
+  color: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
