@@ -16,6 +16,10 @@
 @import url(./blocks/catalog-menu/catalog-menu.css);
 @import url(./blocks/catalog-system-poliv/catalog-system-poliv.css);
 @import url(./blocks/header-catalog/header-catalog.css);
+@import url(./blocks/filter-block/filter-block.css);
+@import url(./blocks/market-catalog/market-catalog.css);
+@import url(./blocks/market-card/market-card.css);
+@import url(./blocks/product-card/product-card.css);
 
 @font-face {
   font-family: "OpenSans-Bold" ;

@@ -7,14 +7,18 @@ import backArrow from "./img/backarrow.svg"
 
 import {Route, Routes} from "react-router-dom";
 import HeaderCatalog from "./HeaderCatalog";
+import FilterBlock from "./FilterBlock";
+import MarketCatalog from "./MarketCatalog";
 export default function CatalogSystemPoliv(){
 
     return(
         <div className="page catalog">
             <HeaderCatalog />
         {/*<SalesSliders/>*/}
-            <div className="catalog-system-poliv">
 
+            <div className="catalog-system-poliv">
+                <FilterBlock/>
+                <MarketCatalog/>
             </div>
         </div>
 

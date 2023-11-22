@@ -1,0 +1,116 @@
+.filter-block{
+    width: 180px;
+}
+
+.filter-block__navigate-count{
+    margin-left: 10px;
+}
+.filter-block__navigate-subsection{
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    align-items: center;
+    transition: linear .3s;
+    cursor: pointer;
+}
+
+.filter-block__navigate-subsection:hover{
+    scale: 1.1;
+    opacity: .5;
+}
+
+.filter-block__navigate-text{
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+
+}
+.filter-block__navigate-arrow{
+    width: 30px;
+    height: 30px;
+}
+
+.filter-block__price-slider{
+    color: #FFFFFF;
+    height: 4px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.filter-block__price-slider .thumb{
+    top:-5px;
+    color: #FFFFFF;
+    height: 14px;
+    width: 14px;
+    background-color: #4595f3;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 7px #ffffff;
+    border-radius: 30px;
+}
+
+.filter-block__price-slider .track-1{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #4595f3;
+    height: 4px;
+    border: none;
+}
+
+.filter-block__price-slider .thumb:hover{
+    background-color: #FFA827;
+}
+
+.filter-block__price-slider .active{
+    outline: #FFA827 1px solid;
+    background-color: #FFA827;
+}
+
+.filter-block__title{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.filter-block__price-value-count{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-block__price-value{
+    color: white;
+    font-size: 12px;
+}
+
+.filter-block__manufacturer-count{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.filter-block__manufacturer-value{
+    background-color: #FFFFFF;
+    padding: 1px 5px;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: linear .3s;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: none;
+}
+
+.filter-block__manufacturer-value_active{
+    background-color: #FFA827;
+}
+
+.filter-block__manufacturer-value:hover{
+    color: #FFA827;
+    opacity: .5;
+}

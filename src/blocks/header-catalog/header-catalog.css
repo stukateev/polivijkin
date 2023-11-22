@@ -6,6 +6,7 @@
 
 .header-catalog__navigate-back-button:hover{
     scale: 1.2;
+    opacity: .5;
 }
 
 .header-catalog__navigate-menu{
@@ -119,5 +120,5 @@
     height: 19px;
     border: none;
     cursor: pointer;
-    display: inline-block
+    display: inline-block;
 }
