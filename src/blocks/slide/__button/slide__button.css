@@ -17,3 +17,12 @@
 .slide__button:hover{
     scale: 1.1;
 }
+@media screen  and (max-device-width : 800px) {
+    .slide__button{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+
+
+    }
+}

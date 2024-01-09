@@ -4,7 +4,7 @@ import React, {useEffect, useState} from "react";
 import Slide from "./Slide";
 
 export default function Slider(){
-
+    const autoPlayDelay = 4000
     const initialSlides = [
         {
             title:"Благоустройство",
@@ -57,10 +57,17 @@ export default function Slider(){
             },
         },
     ]
-    const [activeSlide, setActiveSlide] = useState(0)
     const [activeSlideIndex, setActiveSlideIndex] = useState(0)
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide()
+        }, autoPlayDelay);
 
+        return () => {
+            clearInterval(interval);
+        }
+    },[activeSlideIndex])
 
     const lengthSlides = initialSlides.length - 1
 
@@ -79,19 +86,19 @@ export default function Slider(){
             setActiveSlideIndex(lengthSlides)
         }
     }
+
     function RenderDot(props){
             if (props.index === activeSlideIndex){
 
                 return(
-                    <button className={"slider__dot slider__dot_active slider__dot_number_"+props.index } key={props.index} ></button>
+                    <button className={"slider__dot slider__dot_active slider__dot_number_"+props.index } ></button>
                 )
             }
             else {
                 return(
-                    <button className={"slider__dot slider__dot_number_"+props.index } key={props.index} ></button>
+                    <button className={"slider__dot slider__dot_number_"+props.index }  ></button>
                 )
             }
-
         }
 
 
@@ -100,8 +107,7 @@ export default function Slider(){
             <div className="slider">
                         <Slide
                             obj={initialSlides[activeSlideIndex]}
-                            key={1}
-                            setActiveSlide={setActiveSlide}
+
                         />
                 <div className="slider__controls">
                     <button className="slider__arrow slider__arrow_left" onClick={previousSlide}></button>

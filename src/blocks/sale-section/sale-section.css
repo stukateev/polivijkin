@@ -1,0 +1,116 @@
+.sale-section{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.sale-section__img{
+    width: 430px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+}
+.sale-section__text-count{
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    align-items: start;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 5px 5px 5px 50px;
+    text-shadow: 0 9px 9px rgba(0, 0, 0, 0.25);
+}
+
+.sale-section__title{
+    font-size: 44px;
+    margin: 0;
+}
+
+.sale-section__description{
+    display: inline;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
+.main-service-section__button{
+
+    margin-top: 10px;
+    align-self: end;
+    background: #FFA827;
+    color: #FFFFFF;
+    height: 54px;
+    width: 270px;
+    border: none;
+    border-radius: 50px;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: linear .3s;
+    -webkit-backface-visibility: hidden;
+
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+
+    transform-style: preserve-3d;
+    box-shadow: 0 1.6px 1.6px rgba(0, 0, 0, 0.25), inset 0 1.6px 5.85px rgba(0, 0, 0, 0.4);
+}
+
+.sale-section__description_blue{
+    display: inline;
+    color: #4595f3;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main-service-section__button:hover{
+    transform: scale(1.1);
+}
+
+@media  screen and (max-width: 900px){
+    .sale-section{
+        flex-direction: column;
+        justify-content: revert;
+        position: relative;
+        padding: 0;
+        border-radius: 20px;
+    }
+    .sale-section__img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .sale-section__text-count{
+        padding: 0;
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        position: absolute;
+        height: 100%;
+        background-color: rgba(8, 9, 8, 0.51);
+        border-radius: 20px;
+    }
+}
+
+@media  screen and (max-width: 550px){
+    .sale-section__text-count{
+        padding-bottom: 15px;
+    }
+    .sale-section__img{
+        height: 350px;
+    }
+}
+@media  screen and (max-width: 400px){
+
+    .sale-section__img{
+        height: 420px;
+    }
+}
+
+
+

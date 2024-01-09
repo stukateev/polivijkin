@@ -4,9 +4,9 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 69px;
+    min-height: 49px;
     transition: linear .4s;
-    line-height: 69px;
+    line-height: 49px;
     position: relative;
     cursor: pointer;
     -webkit-backface-visibility: hidden;
@@ -15,6 +15,7 @@
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    margin-top: 6px;
 }
 
 .menu-block__drop-down-button:hover{

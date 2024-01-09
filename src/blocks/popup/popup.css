@@ -1,0 +1,111 @@
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+    z-index: 5;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: linear .6s ;
+}
+.popup__close-button{
+    cursor: pointer;
+    transition: ease-in-out .3s ;
+}
+.popup__close-button:hover{
+    transform: scale(1.2);
+}
+.popup__page{
+    position: relative;
+    margin-top: 200px;
+    background: #2F2F2F;
+    width: 500px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+}
+
+.popup__close-button{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 20px;
+    top: 20px
+}
+
+.popup__title{
+    color: #FFFFFF;
+    font-size: 28px;
+    margin-top: 50px;
+}
+.popup__form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+.popup__input-count{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+.popup__label{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 26.231px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.popup__input{
+    border-radius: 14px;
+    border: 1px solid rgba(5, 162, 214, 0.30);
+    background: #FFF;
+    box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.25);
+    height: 43px;
+    width: 100%;
+    color: #202F5D;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.popup__button{
+    margin-top: 110px;
+    border-radius: 57px;
+    background: #05A2D6;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.40) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    width: 290px;
+    height: 63px;
+    color: #202F5D;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    transition: ease-in-out .3s ;
+}
+
+.popup__button:hover{
+    transform: scale(1.05);
+}
+
+.popup_visible{
+    opacity: 1;
+    visibility: visible;
+}

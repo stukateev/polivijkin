@@ -1,16 +1,27 @@
 .site-section{
-
+    margin-bottom: 130px;
 }
 .site-section__title{
-    margin: 0;
-    margin-bottom: 88px;
-    margin-top: 139px;
+    width: 100%;
     text-align: left;
+    margin: 120px 0 58px;
     font-size: 52px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-
+}
+.site-section__callback-title{
+    margin: 49px 0 44px;
+    margin-top: 140px;
+    text-align: right;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.site-section__callback-subtitle{
+    color: #4595f3;
+    display: inline;
 }
 
 .site-section__grid-box{
@@ -42,17 +53,15 @@
     opacity: 0;
     transition: .3s ease-in-out;
     border-radius: 16px;
-
 }
 
 .site-section__section-button:hover   .site-section__section-button-description{
     visibility: visible;
     opacity: 1;
-
 }
 
-.site-section__section-button:hover   .site-section__section-button-image{
-
+.site-section__section-button:hover   .site-section__section-button-title{
+    color: #FFA827;
 }
 
 .site-section__small-box{
@@ -60,7 +69,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 31px;
-
 }
 
 .site-section__section-button-image{
@@ -68,7 +76,12 @@
     object-fit: cover;
     border-radius: 16px;
 }
-
+.site-section__section-button_bigger{
+    height: 100%;
+}
+.site-section__section-button-image_bigger{
+    height: 330px;
+}
 .site-section__section-button-image_big{
     height: 298px;
 }
@@ -78,6 +91,7 @@
 }
 
 .site-section__section-button-title{
+    position: relative;
     color: #FFF;
     text-align: left;
     font-size: 26.231px;
@@ -85,8 +99,112 @@
     font-weight: 400;
     line-height: normal;
     margin: 20px 0 10px 5px;
+    z-index: 3;
+    transition: .3s linear;
 }
 
 .site-section__section-button-description{
+color: #FFFFFF;
+    padding-bottom: 90px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-device-width : 1px) and (max-device-width : 1000px) {
+    .site-section__small-box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .site-section__section-button{
+        margin-top: 0;
 
+    }
+    .site-section__column{
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-device-width : 1px) and (max-device-width : 800px) {
+    .site-section__title{
+        font-size: 44px;
+        margin-bottom: 50px;
+    }
+    .site-section__grid-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .site-section__small-box{
+        margin-top: 0;
+    }
+    .site-section__section-button-title{
+        margin: 0;
+        position: absolute;
+        bottom: 6px;
+        right: 20px;
+        font-size: 32px;
+        font-weight: bold;
+        text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .site-section__section-button{
+        margin-bottom: 50px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 0;
+        position: relative;
+        border-radius: 20px;
+        background: rgba(42, 40, 40, 0.26);
+        height: 180px;
+    }
+    .site-section__section-button-description{
+        margin: 0;
+        top: 0;
+    }
+    .site-section__small-box{
+        justify-content: start;
+        align-content: start;
+        justify-items: start;
+        margin: 0;
+        gap: 0;
+    }
+    .site-section__section-button-image{
+        height: 100%;
+        margin: 0;
+        border-radius: 20px ;
+        filter: blur(1px) brightness(.7);
+    }
+
+    .site-section__grid-box{
+        gap: 0;
+    }
+}
+
+@media screen  and (max-device-width : 700px) {
+    .site-section__section-button-title {
+        font-weight: normal;
+    }
+}
+
+@media screen and (min-device-width : 1px) and (max-device-width : 600px) {
+    .site-section__section-button-title{
+        font-size: 30px;
+  }
+}
+
+@media screen and (min-device-width : 1px) and (max-device-width : 500px) {
+    .site-section__section-button-title{
+        font-size: 28px;
+    }
+    .site-section__section-button{
+        height: 140px;
+    }
+    .site-section__section-button{
+        margin-bottom: 40px;
+    }
 }

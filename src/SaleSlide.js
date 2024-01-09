@@ -1,24 +1,30 @@
 import React, {useEffect} from "react";
-
+import readMore from "./img/read-more.svg"
 
 export default function SaleSlide(props){
     const PUBLIC_URL = "http://localhost:3000"
 
     return (
-        props.obj.map((slide) => (
-                <div className="slide">
-                    <div className="slide__text">
-                        <h3 className="slide__title">{props.obj.title}</h3>
-                        <span className="slide__subtitle">{props.obj.subtitle}</span>
-                        <ul className="slide__description">
-                            {props.obj.description.map((lis) => (
-                                <li className="slide__description_li">{lis}</li>
-                            ))}
 
-                        </ul>
-                        <button className="slide__button"> Подробнее</button>
+        props.obj.map((OBJ) => (
+                <div className="sale-slide">
+                    <div  className="sale-slide__image-count">
+                        <img className="sale-slide__image" src={PUBLIC_URL + OBJ.image.link} alt={OBJ.image.alt}/>
+                        <img className="sale-slide__button" src={readMore}/>
+                        <p className="sale-slide__description">
+                            dsfsfdsf
+                        dsfsdf
+                        fsdfddsdsdsssssssss dddddddddddddddd
+                            fsdfddsdsdsssssssss dddddddddddddddd
+                            fsdfddsdsdsssssssss dddddddddddddddd
+                        sdfsdfsf</p>
                     </div>
-                    <img className="slide__image" src={PUBLIC_URL + props.obj.image.link} alt={props.obj.image.alt}/>
+
+                    <div className="sale-slide__text">
+                        <p className="sale-slide__title">{OBJ.title}</p>
+
+                    </div>
+
                 </div>
             ))
 

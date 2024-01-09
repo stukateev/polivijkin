@@ -8,8 +8,25 @@
 @import url(./slide_disabled.css);
 
 .slide{
+
     width: 100%;
     padding-left: 10px;
     display:flex;
     justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10px;
+    z-index: 1;
+    transform: rotate(0);
+}
+
+@media screen  and (max-device-width : 800px) {
+    .slide{
+        display: inline-block;
+        height: 90%;
+        min-height: 400px;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
 }

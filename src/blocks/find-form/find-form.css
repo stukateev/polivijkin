@@ -3,14 +3,37 @@
 
 
 .find-form{
-    width: 220px;
-    height: 33px;
+    width: 320px;
+    height: 35px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    align-content: center;
     background: #FFFFFF;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(0, 0, 0, 0.2);
     border-radius: 32.1092px;
     padding-left: 15px;
     padding-right: 15px;
 }
+.find-form-button_mobile{
+    height: 40px;
+    width: 40px;
+    display: none;
+    justify-self: right;
+}
+
+@media screen and (min-device-width : 1px) and (max-device-width : 1200px) {
+    .find-form{
+        width:220px;
+    }
+}
+@media screen and  (max-device-width : 900px) {
+    .find-form{
+        display: none;
+    }
+    .find-form-button_mobile{
+        display: inline-block;
+
+    }
+}
+

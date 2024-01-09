@@ -134,3 +134,15 @@ div.tab__osmos {
     width: 23%;
     height: 290px;
 }
+
+@media screen and (min-device-width : 1px) and (max-device-width : 1000px) {
+    div.tab__news {
+        width: 47.5%;
+    }
+    div.tab__article {
+
+        width: 46%;
+
+    }
+
+}

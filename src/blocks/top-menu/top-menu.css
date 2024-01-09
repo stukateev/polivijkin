@@ -5,4 +5,29 @@
     padding-top: 15px;
     padding-right: 15px;
     height: 90px;
+
+}
+
+.top-menu__burger-button{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (min-device-width : 1px) and (max-device-width : 750px) {
+    .top-menu__burger-button{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-device-width : 500px) {
+    .top-menu__burger-button{
+        position: absolute;
+        left: 4px;
+
+    }
+    .top-menu{
+        gap: 15px;
+        justify-content: end;
+    }
 }

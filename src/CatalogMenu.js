@@ -5,6 +5,7 @@ const PUBLIC_URL = "http://localhost:3000"
 const categoryList = [
     {
         "category_name":"Системы полива",
+        "category_link":"/catalog/system-poliv",
         "subcategory_list":[
             {"subcategory_name":"Клапаны", "subcategory_img":"/catalog/Hunter-PGV-151.png", "subcategory_img_alt":"Клапаны"  },
             {"subcategory_name":"Дождеватели", "subcategory_img":"/catalog/hunter-i-25--irrigatore-dinamico-con-attacco-1-femmina-raggio-da-119-a-216-metri.jpg", "subcategory_img_alt":"Дождеватели"},
@@ -16,6 +17,7 @@ const categoryList = [
     },
     {
         "category_name":"Освещение",
+        "category_link":"/catalog/landscape-light",
         "subcategory_list":[
             {"subcategory_name":"Уличные светильники"},
             {"subcategory_name":"Лампочки"},
@@ -40,14 +42,11 @@ export default function CatalogMenu(){
                  onMouseLeave={() => setScreenClassName("catalog-menu__fold-screen_disabled")}
                  className={screenClassName}>
                 {activeCatalogMenuScreen.map((obj) => {
-                    console.log(PUBLIC_URL+obj.subcategory_img)
                     return (
-
                         <div className="catalog-menu__category">
                             <h4 className="catalog-menu__category-title">{obj.subcategory_name}</h4>
                             <img className="catalog-menu__category-image" src={PUBLIC_URL + obj.subcategory_img} />
                         </div>
-
                     )
                 })}
             </div>
@@ -65,32 +64,19 @@ export default function CatalogMenu(){
 
     return(
         <div className="catalog-menu">
+            <ul className="catalog-menu__list">
+                {categoryList.map((obj) => {
 
-            <ul className="catalog-menu__list"
-                >
-                <li className="catalog-menu__fold"
-                    onClick={() =>navigate("/catalog/system-poliv")}
-                    onMouseEnter={() => categoryCheck("Системы полива")}
-                    onMouseLeave={() => setScreenClassName("catalog-menu__fold-screen_disabled")}>
-                    Системы полива
-                    <div className="catalog-menu__animation"></div>
-                </li>
-                <li className="catalog-menu__fold"
-                    onMouseEnter={() => categoryCheck("Освещение")}
-                    onMouseLeave={() => setScreenClassName("catalog-menu__fold-screen_disabled")}>
-                    Освещение
-                    <div className="catalog-menu__animation"></div>
-                </li>
-                <li className="catalog-menu__fold">Озеленение
-                    <div className="catalog-menu__animation"></div>
-                </li>
-                <li className="catalog-menu__fold">Плитка
-                    <div className="catalog-menu__animation"></div>
-                </li>
-                <li className="catalog-menu__fold">Бассейны
-                    <div className="catalog-menu__animation"></div>
-                </li>
-
+                    return(
+                        <li className="catalog-menu__fold"
+                            onClick={() =>navigate(obj.category_link)}
+                            onMouseEnter={() => categoryCheck(obj.category_name)}
+                            onMouseLeave={() => setScreenClassName("catalog-menu__fold-screen_disabled")}>
+                            {obj.category_name}
+                            <div className="catalog-menu__animation"></div>
+                        </li>
+                    )
+                })}
             </ul>
 
                 <img className="catalog-menu__image" src={slide}/>

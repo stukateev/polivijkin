@@ -10,9 +10,27 @@
 }
 
 @media only screen
-and (min-device-width : 1024px)
+and (min-device-width : 1px)
 and (max-device-width : 1350px) {
     .slide__image{
         margin-top: 50px;
     }
+}
+@media screen and (min-device-width : 1px) and (max-device-width : 1040px) {
+    .slide__image{
+        width: 48%;
+    }
+}
+@media screen  and (max-device-width : 800px) {
+    .slide__image{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        filter: blur(2px) brightness(0.6);
+        height: 94%;
+        left: 0;
+        top: 0;
+        margin-right: 0;
+    }
+
 }

@@ -1,0 +1,20 @@
+.article-slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 110px;
+    width: 100%;
+    z-index: 1;
+}
+
+.article-slider__title{
+    margin-top: 120px;
+    font-size: 38px;
+    letter-spacing: 1.6px;
+}
+
+.article-slider__count{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -5,3 +5,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen  and (max-device-width : 750px) {
+    .logo__description{
+        margin-left: 6px;
+        height: auto;
+    }
+}

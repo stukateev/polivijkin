@@ -1,0 +1,33 @@
+.logo_place_footer{
+    width: 260px;
+    height: 40px;
+}
+.logo__img_place_footer{
+    width: 58px;
+    height: 45px;
+}
+.logo__description_place_footer{
+    display: flex;
+    align-content: center;
+    margin-left: 14px;
+}
+.logo__title_place_footer{
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 17px;
+}
+.logo__subtitle_place_footer{
+    line-height: 14px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+@media screen and (min-device-width : 1px) and (max-device-width : 1300px) {
+    .logo_place_footer{
+        max-width: 250px;
+    }
+    .logo__subtitle_place_footer{
+        width: 140px;
+    }
+}
+

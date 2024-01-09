@@ -13,3 +13,9 @@ and (max-device-width : 1350px) {
         font-size: 20px;
     }
 }
+
+@media screen  and (max-device-width : 800px) {
+    .slide__description {
+        font-size: 14px;
+    }
+}

@@ -6,3 +6,11 @@
     color: #ffffff;
     text-align: left;
 }
+
+@media screen  and (max-device-width : 800px) {
+    .slide__subtitle {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+}

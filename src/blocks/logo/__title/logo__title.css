@@ -8,3 +8,16 @@
     display: inline-block;
     text-align: start;
 }
+
+@media screen and (min-device-width : 1px) and (max-device-width : 1000px) {
+    .logo__title{
+        width: 170px;
+    }
+}
+
+@media screen and (min-device-width : 1px) and (max-device-width : 750px) {
+    .logo__title{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}

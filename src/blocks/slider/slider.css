@@ -1,5 +1,4 @@
 @import url(./__dots/slider__dots.css);
-
 @import url(./__dot/slider__dot.css);
 @import url(./__dot/_active/slider__dot_active.css);
 @import url(./__controls/slider__controls.css);
@@ -8,7 +7,21 @@
 
 .slider{
     overflow: hidden;
-    max-width: 1400px;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+}
+@media screen  and (max-device-width :750px) {
+    .slider{
+        margin-top: 100px;
+    }
+}
+@media screen  and (max-device-width :500px) {
+    .slider{
+        margin-top: 140px;
+    }
 }

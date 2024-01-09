@@ -1,0 +1,96 @@
+.main-service-section{
+    position: relative;
+    min-height: 810px;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 210px;
+    justify-content: space-between;
+    box-shadow:  0px 5px 15px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.main-service-section__title{
+    margin: 0;
+    z-index: 3;
+    position: relative;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 28px;
+    text-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main-service-section__image{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(.5);
+}
+.main-service-section__work-count{
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgba(30, 30, 30, 0.69);
+    z-index: 3;
+    max-width: 30%;
+    width: 600px;
+}
+
+.main-service-section__sub-service-count{
+    margin-top: 3px;
+    box-sizing: border-box;
+    padding: 8px 16px 8px 15px;
+    z-index: 3;
+    cursor: pointer;
+    transition: .3s linear;
+    width: 100%;
+}
+
+
+.main-service-section__sub-service-count:first-of-type{
+    margin-top: 46px;
+}
+
+.main-service-section__subtitle-index{
+    margin: 0;
+    z-index: 3;
+    text-align: start;
+    color: #4595f3;
+    font-size: 20px;
+}
+
+.main-service-section__subtitle{
+    text-align: left;
+    margin: 0;
+    margin-top: 6px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 3;
+
+}
+.main-service-section__description{
+    margin: 0;
+    z-index: 3;
+    color: #FFFFFF;
+    position: absolute;
+    display: flex;
+    bottom:0;
+    right: 0;
+    width: 70%;
+    box-sizing: border-box;
+    background-color: rgba(30, 30, 30, 0.69);
+    padding: 20px;
+    border-radius: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.main-service-section__sub-service-count_activate{
+    background-color: rgba(255, 168, 39, 0.3);
+}
+

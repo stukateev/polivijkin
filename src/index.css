@@ -1,6 +1,17 @@
+@import url(./blocks/App/App.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/callback-button/callback-button.css);
+
 @import url(./blocks/logo/logo.css);
+@import url(./blocks/logo/__description/logo__description.css);
+@import url(./blocks/logo/__img/logo__img.css);
+@import url(./blocks/logo/__title/logo__title.css);
+@import url(./blocks/logo/__subtitle/logo__subtitle.css);
+@import url(./blocks/logo/_place/_footer/logo_place_footer.css);
+@import url(./blocks/logo/_place/_header/logo_place_header.css);
+
+
+
 @import url(./blocks/menu-block/menu-block.css);
 @import url(./blocks/find-form/find-form.css);
 @import url(./blocks/page/page.css);
@@ -20,6 +31,18 @@
 @import url(./blocks/market-catalog/market-catalog.css);
 @import url(./blocks/market-card/market-card.css);
 @import url(./blocks/product-card/product-card.css);
+@import url(./blocks/burger-menu/burger-menu.css);
+@import url(./blocks/sale-slide/sale-slide.css);
+@import url(blocks/article-slider/article-slider.css);
+@import url(blocks/sign-in/auth.css);
+@import url(blocks/advantages/advantages.css);
+@import url(blocks/main-service-section/main-service-section.css);
+@import url(blocks/sale-section/sale-section.css);
+@import url(blocks/service-description/service-description.css);
+@import url(blocks/sub-service-section/sub-service-section.css);
+@import url(blocks/popup/popup.css);
+@import url(blocks/articles/articles.css);
+
 
 @font-face {
   font-family: "OpenSans-Bold" ;
@@ -69,9 +92,80 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.App {
+  text-align: center;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-device-width : 1px) and (max-device-width : 800px) {
+  .App {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-device-width : 1300px) and (max-device-width : 1550px) {
+  .App{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-device-width : 1551px) and (max-device-width : 1750px) {
+  .App{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (min-device-width : 1751px) and (max-device-width : 2100px) {
+  .App{
+    padding-left: 360px;
+    padding-right: 360px;
+  }
+}
+
+

@@ -1,7 +1,24 @@
 .header {
     padding: 0;
     max-width: 100%;
-    min-width: 900px;
     height: 200px;
     margin: 0;
+    position: relative;
+}
+
+@media screen and (min-device-width : 1px) and (max-device-width : 1023px) {
+    .header {
+        min-width: 100px;
+    }
+}
+@media screen  and (max-device-width :750px) {
+    .header{
+        height: auto;
+        background-color: rgba(23, 22, 22, 0.64);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top:0;
+        margin-bottom: 50px;
+    }
 }

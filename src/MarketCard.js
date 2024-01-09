@@ -5,17 +5,18 @@ import sortByLogo from "./img/sortby.svg"
 import img from "./img/market/ip8vklpwht8pf4yp1kckgv40ns6r20wp.jpeg"
 import backArrow from "./img/backarrow.svg"
 
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, useNavigate} from "react-router-dom";
 import HeaderCatalog from "./HeaderCatalog";
 import FilterBlock from "./FilterBlock";
 
 export default function MarketCard(){
 
-
+const navigate = useNavigate()
     return(
         <div className="market-card">
             <div className="market-card_wrapper">
-                <a className="market-card__link-count"></a>
+                <a onClick={() =>navigate("/product-card")}
+                    className="market-card__link-count"></a>
                 <img className="market-card__img" src={img}/>
 
                 <div className="market-card__price-count">

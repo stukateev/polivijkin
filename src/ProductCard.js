@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from "./Header"
 import img from "./img/Rectangle 38.png"
@@ -6,11 +6,13 @@ import img from "./img/Rectangle 38.png"
 import quantityArrow from "./img/arrow-quanity.png"
 import plusIcon from "./img/plus.svg"
 
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, useParams} from "react-router-dom";
 import HeaderCatalog from "./HeaderCatalog";
 import FilterBlock from "./FilterBlock";
 
 export default function ProductCard(){
+    const { productId } = useParams()
+
     const[instructionState, setInstructionState] = useState("product-card__instruction-link")
     function clickInstruction(){
         if (instructionState==="product-card__instruction-link"){
@@ -20,6 +22,10 @@ export default function ProductCard(){
             setInstructionState("product-card__instruction-link")
         }
     }
+    useEffect(() => {
+        // Здесь вы можете сделать что-то с productId, если это необходимо
+    }, [productId]);
+
 
     return(
         <div className="product-card">
@@ -29,8 +35,7 @@ export default function ProductCard(){
             <div className="product-card__description-count">
                 <h3 className="product-card__title">КонтроллеР HC</h3>
                 <p className="product-card__description-text">Контроллер HCC обеспечивает наличие широкого перечня
-                    удобных средств для мониторинга масштабн
-                    ых проектов — доступ к любому из них можно получить, всего лишь нажав кнопку</p>
+                    удобных средств для мониторинга масштабных проектов — доступ к любому из них можно получить, всего лишь нажав кнопку</p>
                 <div className="product-card__price-count">
                     <p className="product-card__new-price">3 530 ₽</p>
                     <p className="product-card__old-price">4 530 ₽</p>

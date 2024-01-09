@@ -3,7 +3,7 @@ import React from "react";
 export default  function FeedbackForm (){
     return(
         <section className={"feedback-form"}>
-            <h3 className={"feedback-form__title"}>Форма обратной связи</h3>
+
             <form className={"feedback-form__form"}>
                 <div className={"feedback-form__form-main"}>
                     <div className={"feedback-form__input-count"}>
@@ -35,7 +35,6 @@ export default  function FeedbackForm (){
                     Отправить
                 </button>
             </form>
-
         </section>
     )
 }

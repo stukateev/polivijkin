@@ -1,4 +1,13 @@
 .find-form__input{
     border: none;
-    height: 90%;
+    height: 84%;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.find-form__input:focus {
+    outline-color: #FFA827;
+}
+.find-form__input:focus .find-form{
+    border: #FFA827 1px solid;
 }

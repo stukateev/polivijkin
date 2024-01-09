@@ -17,9 +17,43 @@
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-
+.callback-button_mobile{
+    display: none;
+    width: 44px;
+    height: 44px;
+    justify-self: right;
+    animation: ease-in-out pulsing 4s infinite;
+}
 button.callback-button:hover {
     transform: scale(1.1);
     background: rgba(24, 10, 10, 0.5);
     color: #FFA827;
+}
+
+@media screen and  (max-device-width : 900px) {
+    .callback-button_desktop{
+        display: none;
+    }
+    .callback-button_mobile{
+        display: inline-block;
+    }
+}
+
+
+@keyframes pulsing {
+    0% {
+        transform: scale(1.1);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
